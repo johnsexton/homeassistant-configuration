@@ -1,0 +1,52 @@
+####################
+# Configuration
+####################
+homeassistant:
+  name: Home
+  latitude: !secret lat
+  longitude: !secret long
+  elevation: !secret home_elevation
+  unit_system: imperial
+  time_zone: America/New_York
+
+http:
+  api_password: !secret http_api_password
+  ssl_certificate: !secret ssl_certificate
+  ssl_key: !secret ssl_key
+
+# Enables
+frontend:
+updater:
+logbook:
+sun:
+conversation:
+history:
+discovery:
+
+# Platforms
+mqtt:
+  broker: 127.0.0.1
+  port: 1883
+  client_id: home-assistant-1
+  username: !secret mqtt_user
+  password: !secret mqtt_pass
+
+ifttt:
+  key: !secret ifttt_key
+
+zwave:
+  usb_path: /dev/ttyACM0
+  config_path: /srv/hass/hass_venv/lib/python3.4/site-packages/libopenzwave-0.3.1-py3.4-linux-armv7l.egg/config
+
+sensor:
+  - platform: speedtest
+    monitored_conditions:
+      - ping
+      - download
+      - upload
+
+####################
+# Includes
+####################
+nest: !include nest.yaml
+automation: !include automation.yaml

@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!*.yaml
+!automations/*.yaml
+
+# Oh but ignore this one still
+secrets.yaml
