@@ -4,13 +4,13 @@
     event: sunset
     offset: '-01:00:00'
   action:
-    service: homeassistant.turn_on
-    entity_id: light.christmas_tree_level_2_0
+    service: light.turn_on
+    entity_id: script.xmastree
 
 - alias: X-Mas Tree Off At Midnight
   trigger:
     platform: time
     after: '00:00:00'
   action:
-    service: homeassistant.turn_off
+    service: light.turn_off
     entity_id: light.christmas_tree_level_2_0

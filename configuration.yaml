@@ -50,3 +50,4 @@ sensor:
 ####################
 nest: !include nest.yaml
 automation: !include automation.yaml
+script: !include scripts.yaml
