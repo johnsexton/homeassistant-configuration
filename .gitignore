@@ -5,6 +5,7 @@
 !.gitignore
 !*.yaml
 !README.md
+!scripts/*.yaml
 
 # Oh but ignore this one still
 secrets.yaml
