@@ -36,6 +36,6 @@ sequence:
    service: light.turn_on
    data:
      entity_id: light.christmas_tree_level_2_0
-     brightness: 100
+     brightness: 99
  - delay:
      minutes: 1
