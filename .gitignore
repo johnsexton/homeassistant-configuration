@@ -5,7 +5,12 @@
 !.gitignore
 !*.yaml
 !README.md
-!scripts/*
 
-# Oh but ignore this one still
+# But ignore this one still
 secrets.yaml
+
+# Oh and allow folders
+!*/
+
+# But this folder can be ignored
+deps/

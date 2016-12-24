@@ -1,0 +1,41 @@
+alias: X-Mas Tree Lights
+sequence:
+ - alias: X-Mas Tree Phase 1
+   service: light.turn_on
+   data:
+     entity_id: light.christmas_tree_level_2_0
+     brightness: 5
+ - delay:
+     minutes: 1
+
+ - alias: X-Mas Tree Phase 2
+   service: light.turn_on
+   data:
+     entity_id: light.christmas_tree_level_2_0
+     brightness: 10
+ - delay:
+     minutes: 1
+
+ - alias: X-Mas Tree Phase 3
+   service: light.turn_on
+   data:
+     entity_id: light.christmas_tree_level_2_0
+     brightness: 25
+ - delay:
+     minutes: 1
+
+ - alias: X-Mas Tree Phase 4
+   service: light.turn_on
+   data:
+     entity_id: light.christmas_tree_level_2_0
+     brightness: 50
+ - delay:
+     minutes: 1
+
+ - alias: X-Mas Tree Phase 5
+   service: light.turn_on
+   data:
+     entity_id: light.christmas_tree_level_2_0
+     brightness: 100
+ - delay:
+     minutes: 1
