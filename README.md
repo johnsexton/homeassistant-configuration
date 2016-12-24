@@ -9,4 +9,5 @@ This is my current [Home Assistant](https://home-assistant.io) configuration (Ve
 * [GE Z-Wave Light Switch](http://a.co/gVZB15v)
 * [Ecolink Z-Wave PIR Motion Detector](http://a.co/aJbFchl)
 * [Google Home](https://madeby.google.com/home/)
+* [Phillips Hue](http://www2.meethue.com/en-us/)
 * IP Security Camera
