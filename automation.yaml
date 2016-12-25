@@ -1,3 +1,21 @@
+
+- alias: X-Mas Tree On At Sunrise
+  trigger:
+    platform: sun
+    event: sunrise
+    offset: '00:00:00'
+  action:
+    service: light.turn_on
+    entity_id: script.xmastree
+
+- alias: X-Mas Tree Off At Noon
+  trigger:
+    platform: time
+    after: '12:00:00'
+  action:
+    service: light.turn_off
+    entity_id: light.christmas_tree_level_2_0
+
 - alias: X-Mas Tree On Before Sunset
   trigger:
     platform: sun
