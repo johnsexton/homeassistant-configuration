@@ -2,7 +2,15 @@ default_view:
   view: yes
   entities:
     - climate.dining_room
-    - group.all_lights
+    - group.lights
+
+lights:
+  - light.ge_unknown_type5044_id3031_level_3_0
+
+media_players:
+  name: Media Players
+  view: yes
+  entities:
     - media_player.living_room_speaker
     - media_player.living_room
     - media_player.bedroom
