@@ -3,6 +3,9 @@ default_view:
   entities:
     - climate.dining_room
     - group.lights
+    - sun.sun
+    - sensor.yr_symbol
+    - group.weather_darksky
 
 lights:
   - light.ge_unknown_type5044_id3031_level_3_0
@@ -36,3 +39,18 @@ internet:
     - sensor.speedtest_download
     - sensor.speedtest_ping
     - sensor.speedtest_upload
+
+weather_darksky:
+  name: Weather
+  entities:
+    - sensor.dark_sky_summary
+    - sensor.dark_sky_temperature
+    - sensor.dark_sky_apparent_temperature
+    - sensor.dark_sky_daily_high_temperature
+    - sensor.dark_sky_daily_low_temperature
+    - sensor.dark_sky_wind_speed
+    - sensor.dark_sky_humidity
+    - sensor.dark_sky_cloud_coverage
+    - sensor.dark_sky_precip
+    - sensor.dark_sky_precip_probability
+    - sensor.dark_sky_daily_summary

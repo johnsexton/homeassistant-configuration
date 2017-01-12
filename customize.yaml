@@ -19,3 +19,37 @@ sensor.speedtest_upload:
 light.ge_unknown_type5044_id3031_level_3_0:
   friendly_name: Living Room Light
   icon: mdi:lightbulb
+
+sensor.dark_sky_summary:
+  friendly_name: Forecast
+  icon: mdi:briefcase
+
+sensor.dark_sky_temperature:
+  friendly_name: Current Temperature
+
+sensor.dark_sky_apparent_temperature:
+  friendly_name: Feels Like
+
+sensor.dark_sky_cloud_coverage:
+  friendly_name: Cloud Coverage
+
+sensor.dark_sky_daily_high_temperature:
+  friendly_name: High
+
+sensor.dark_sky_daily_low_temperature:
+  friendly_name: Low
+
+sensor.dark_sky_wind_speed:
+  friendly_name: Wind Speed
+
+sensor.dark_sky_humidity:
+  friendly_name: Humitidy
+
+sensor.dark_sky_precip:
+  friendly_name: Precipitation Type
+
+sensor.dark_sky_precip_probability:
+  friendly_name: Precipitation Probability
+
+sensor.dark_sky_daily_summary:
+  friendly_name: Weekly Summary
