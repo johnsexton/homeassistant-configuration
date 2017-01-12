@@ -1,0 +1,21 @@
+network:
+  name: Network
+  view: yes
+  entities:
+    - group.computer
+    - group.internet
+
+internet:
+  name: Internet
+  entities:
+    - sensor.speedtest_download
+    - sensor.speedtest_ping
+    - sensor.speedtest_upload
+
+computer:
+  name: Computer Analytics
+  entities:
+    - sensor.cpu
+    - sensor.cpu_use
+    - sensor.disk_use_home
+    - sensor.ram_free
