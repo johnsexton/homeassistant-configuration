@@ -7,6 +7,8 @@ This is my current [Home Assistant](https://home-assistant.io) configuration (Ve
 * [Nest Thermostat](https://nest.com/thermostat/meet-nest-thermostat/)
 * [Aeotec Z Stick (Gen 5)](http://a.co/hJUFJIM)
 * [GE Z-Wave Plug In Smart Dimmer](http://a.co/8E4fBUz)
+* [Dark Sky](https://darksky.net)
+* [Ookla Speedtest.net](http://www.speedtest.net/)
 
 ## Device Roadmap
 * [GE Z-Wave Light Switch](http://a.co/gVZB15v)
