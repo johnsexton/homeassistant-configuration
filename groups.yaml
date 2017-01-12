@@ -1,16 +1,18 @@
+default_view:
+  view: yes
+  entities:
+    - climate.dining_room
+    - group.all_lights
+    - media_player.living_room_speaker
+    - media_player.living_room
+    - media_player.bedroom
+
 network:
   name: Network
   view: yes
   entities:
     - group.computer
     - group.internet
-
-internet:
-  name: Internet
-  entities:
-    - sensor.speedtest_download
-    - sensor.speedtest_ping
-    - sensor.speedtest_upload
 
 computer:
   name: Computer Analytics
@@ -19,3 +21,10 @@ computer:
     - sensor.cpu_use
     - sensor.disk_use_home
     - sensor.ram_free
+
+internet:
+  name: Internet
+  entities:
+    - sensor.speedtest_download
+    - sensor.speedtest_ping
+    - sensor.speedtest_upload
