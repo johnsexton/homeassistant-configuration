@@ -1,4 +1,4 @@
-- alias: Living Room Lamp On Before Sunset
+- alias: ON Living Room Lamp Before Sunset
   trigger:
     platform: sun
     event: sunset
@@ -7,10 +7,18 @@
     service: homeassistant.turn_on
     entity_id: light.ge_unknown_type5044_id3031_level_4_0
 
-- alias: Living Room Lamp Off At Night
+- alias: ON Living Room Lamp at 5am
   trigger:
     platform: time
-    after: '02:00:00'
+    after: '05:00:00'
+  action:
+    service: homeassistant.turn_on
+    entity_id: light.ge_unknown_type5044_id3031_level_4_0
+
+- alias: OFF Living Room Lamp at 6:30am
+  trigger:
+    platform: time
+    after: '06:30:00'
   action:
     service: homeassistant.turn_off
     entity_id: light.ge_unknown_type5044_id3031_level_4_0
