@@ -16,8 +16,16 @@ sensor.speedtest_upload:
   friendly_name: Upload Speed
   icon: mdi:upload
 
-light.ge_unknown_type5044_id3031_level_3_0:
+switch.ge_12722_onoff_relay_switch_switch_6_0:
+  friendly_name: Kitchen Light
+  icon: mdi:lightbulb
+
+light.ge_unknown_type5044_id3031_level_4_0:
   friendly_name: Living Room Light
+  icon: mdi:lightbulb
+
+light.ge_12724_3way_dimmer_switch_level_5_0:
+  friendly_name: Hallway Lights
   icon: mdi:lightbulb
 
 sensor.dark_sky_summary:

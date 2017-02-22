@@ -1,14 +1,15 @@
-default_view:
+control:
+  name: Control
   view: yes
   entities:
-    - climate.dining_room
     - group.lights
-    - sun.sun
-    - sensor.yr_symbol
-    - group.weather_darksky
 
 lights:
-  - light.ge_unknown_type5044_id3031_level_3_0
+  name: lights
+  entities:
+    - switch.ge_12722_onoff_relay_switch_switch_6_0
+    - light.ge_unknown_type5044_id3031_level_4_0
+    - light.ge_12724_3way_dimmer_switch_level_5_0
 
 media_players:
   name: Media Players
@@ -24,6 +25,15 @@ network:
   entities:
     - group.computer
     - group.internet
+
+environment:
+  name: environment
+  view: yes
+  entities:
+    - sensor.yr_symbol
+    - sun.sun
+    - climate.dining_room
+    - group.weather_darksky
 
 computer:
   name: Computer Analytics
