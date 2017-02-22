@@ -3,9 +3,10 @@ control:
   view: yes
   entities:
     - group.lights
+    - group.media_players
 
 lights:
-  name: lights
+  name: Lights
   entities:
     - switch.ge_12722_onoff_relay_switch_switch_6_0
     - light.ge_unknown_type5044_id3031_level_4_0
@@ -13,11 +14,23 @@ lights:
 
 media_players:
   name: Media Players
-  view: yes
   entities:
     - media_player.living_room_speaker
     - media_player.living_room
     - media_player.bedroom
+
+automations:
+  name: automations
+  view: yes
+  entities:
+    - group.auto_living_room
+
+auto_living_room:
+  name: Living Room
+  entities:
+    - automation.on_living_room_lamp_before_sunset
+    - automation.on_living_room_lamp_at_5am
+    - automation.off_living_room_lamp_at_630am
 
 network:
   name: Network
@@ -25,15 +38,6 @@ network:
   entities:
     - group.computer
     - group.internet
-
-environment:
-  name: environment
-  view: yes
-  entities:
-    - sensor.yr_symbol
-    - sun.sun
-    - climate.dining_room
-    - group.weather_darksky
 
 computer:
   name: Computer Analytics
@@ -49,6 +53,15 @@ internet:
     - sensor.speedtest_download
     - sensor.speedtest_ping
     - sensor.speedtest_upload
+
+environment:
+  name: environment
+  view: yes
+  entities:
+    - sensor.yr_symbol
+    - sun.sun
+    - climate.dining_room
+    - group.weather_darksky
 
 weather_darksky:
   name: Weather
