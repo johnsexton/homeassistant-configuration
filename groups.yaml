@@ -62,6 +62,7 @@ environment:
     - sun.sun
     - climate.dining_room
     - group.weather_darksky
+    - camera.weather_cam
 
 weather_darksky:
   name: Weather
@@ -77,3 +78,11 @@ weather_darksky:
     - sensor.dark_sky_precip
     - sensor.dark_sky_precip_probability
     - sensor.dark_sky_daily_summary
+
+traffic:
+  name: traffic
+  view: yes
+  entities:
+    - camera.i95_at_mm220
+    - camera.i95_at_mm260
+    - camera.beville_and_clyde_morris
