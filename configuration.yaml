@@ -21,6 +21,8 @@ frontend:
 
 http:
   api_password: !secret http_api_password
+  ssl_certificate: !secret http_ssl_cert
+  ssl_key: !secret http_ssl_key
 
 # Checks for available updates
 updater:
@@ -112,16 +114,6 @@ camera 1:
   name: Weather Cam
   platform: generic
   still_image_url: https://radblast.wunderground.com/cgi-bin/radar/WUNIDS_map?station=MLB&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=1.000&noclutter=0&showstorms=0&mapx=400&mapy=240&centerx=400&centery=240&transx=0&transy=0&showlabels=1&severe=0&rainsnow=0&lightning=0&smooth=0&rand=24796327&lat=0&lon=0&label=you
-
-camera 2:
-  name: I-95 at MM260
-  platform: generic
-  still_image_url: http://ie.trafficland.com/10201/full?system=trafficland-www&pubtoken=a89d0f0855b95b40c79ac5b0ac8f67a98c3e58b18d342e6c008468ac7d43fbdc&refreshRate=2000&cache=57338
-
-camera 3:
-  name: Beville and Clyde Morris
-  platform: generic
-  still_image_url: http://ie.trafficland.com/10239/full?system=trafficland-www&pubtoken=1897cde3e46d3c6273d752a080c8da1f9e5f954f70761e592f123208bfa5fce9&refreshRate=2000&cache=97561
 
 
 ####################
