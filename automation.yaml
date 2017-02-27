@@ -1,2 +1,3 @@
 !include automations/livingroomlights.yaml
+!include automations/kitchen.yaml
 # !include automations/xmastree.yaml
