@@ -8,10 +8,10 @@ This is my current [Home Assistant](https://home-assistant.io) configuration (Ve
 * [Aeotec Z Stick (Gen 5)](http://a.co/hJUFJIM)
 * [GE Z-Wave Light Switch](http://a.co/gVZB15v)
 * [GE Z-Wave Plug In Smart Dimmer](http://a.co/8E4fBUz)
+* [Ecolink Z-Wave PIR Motion Detector](http://a.co/aJbFchl)
 * [Dark Sky](https://darksky.net)
 * [Ookla Speedtest.net](http://www.speedtest.net/)
 
 ## Device Roadmap
-* [Ecolink Z-Wave PIR Motion Detector](http://a.co/aJbFchl)
 * [Phillips Hue](http://www2.meethue.com/en-us/)
 * IP Security Camera
