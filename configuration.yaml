@@ -120,5 +120,4 @@ camera 1:
 # Includes
 ####################
 group: !include groups.yaml
-# script: !include scripts.yaml
 automation: !include automation.yaml
