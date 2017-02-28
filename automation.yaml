@@ -1,3 +1,70 @@
-!include automations/livingroomlights.yaml
-!include automations/kitchen.yaml
-# !include automations/xmastree.yaml
+########################################
+## Living Room
+########################################
+
+- alias: ON Living Room Lamp Before Sunset
+  trigger:
+    platform: sun
+    event: sunset
+    offset: '-01:00:00'
+  action:
+    service: homeassistant.turn_on
+    entity_id: light.ge_unknown_type5044_id3031_level_4_0
+
+- alias: ON Living Room Lamp at 5am
+  trigger:
+    platform: time
+    after: '05:00:00'
+  action:
+    service: homeassistant.turn_on
+    entity_id: light.ge_unknown_type5044_id3031_level_4_0
+
+- alias: OFF Living Room Lamp at 6:30am
+  trigger:
+    platform: time
+    after: '06:30:00'
+  action:
+    service: homeassistant.turn_off
+    entity_id: light.ge_unknown_type5044_id3031_level_4_0
+
+########################################
+## Kitchen
+########################################
+- alias: ON Kitchen Light When Motion
+  trigger:
+    platform: state
+    entity_id: binary_sensor.ecolink_motion_sensor_sensor_8_0
+    to: 'on'
+  action:
+    service: homeassistant.turn_on
+    entity_id: switch.ge_12722_onoff_relay_switch_switch_6_0
+
+- alias: OFF Kitchen Light When No Motion
+  trigger:
+    platform: state
+    entity_id: binary_sensor.ecolink_motion_sensor_sensor_8_0
+    to: 'off'
+  action:
+    service: homeassistant.turn_off
+    entity_id: switch.ge_12722_onoff_relay_switch_switch_6_0
+
+########################################
+## Hallway
+########################################
+- alias: ON Hallway Light When Motion
+  trigger:
+    platform: state
+    entity_id: binary_sensor.ecolink_motion_sensor_sensor_7_0
+    to: 'on'
+  action:
+    service: homeassistant.turn_on
+    entity_id: light.ge_12724_3way_dimmer_switch_level_5_0
+
+- alias: OFF Hallway Light When No Motion
+  trigger:
+    platform: state
+    entity_id: binary_sensor.ecolink_motion_sensor_sensor_7_0
+    to: 'off'
+  action:
+    service: homeassistant.turn_off
+    entity_id: light.ge_12724_3way_dimmer_switch_level_5_0

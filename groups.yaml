@@ -1,8 +1,12 @@
+########################################
+## Controls Tab
+########################################
 controls:
   name: Controls
   view: yes
   entities:
     - group.lights
+    - group.sensors
     - group.media_players
 
 lights:
@@ -12,6 +16,12 @@ lights:
     - light.ge_unknown_type5044_id3031_level_4_0
     - light.ge_12724_3way_dimmer_switch_level_5_0
 
+sensors:
+  name: Sensors
+  entities:
+    - binary_sensor.ecolink_motion_sensor_sensor_7_0
+    - binary_sensor.ecolink_motion_sensor_sensor_8_0
+
 media_players:
   name: Media Players
   entities:
@@ -19,19 +29,39 @@ media_players:
     - media_player.living_room
     - media_player.bedroom
 
+########################################
+## Automations Tab
+########################################
 automations:
   name: automations
   view: yes
   entities:
     - group.auto_living_room
+    - group.auto_kitchen
+    - group.auto_hallway
 
 auto_living_room:
-  name: Living Room
+  name: Living Room Automations
   entities:
     - automation.on_living_room_lamp_before_sunset
     - automation.on_living_room_lamp_at_5am
     - automation.off_living_room_lamp_at_630am
 
+auto_kitchen:
+  name: Kitchen Automations
+  entities:
+    - automation.on_kitchen_light_when_motion
+    - automation.off_kitchen_light_when_no_motion
+
+auto_hallway:
+  name: Hallway Automations
+  entities:
+    - automation.on_hallway_light_when_motion
+    - automation.off_hallway_light_when_no_motion
+
+########################################
+## Network Tab
+########################################
 network:
   name: Network
   view: yes
@@ -54,6 +84,9 @@ internet:
     - sensor.speedtest_ping
     - sensor.speedtest_upload
 
+########################################
+## Environment Tab
+########################################
 environment:
   name: environment
   view: yes

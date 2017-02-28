@@ -1,9 +1,12 @@
-####################
-# Customize
-####################
+########################################
+## Nest
+########################################
 climate.dining_room:
   friendly_name: Nest Thermostat
 
+########################################
+## SpeedTest.net
+########################################
 sensor.speedtest_download:
   friendly_name: Download Speed
   icon: mdi:download
@@ -16,6 +19,9 @@ sensor.speedtest_upload:
   friendly_name: Upload Speed
   icon: mdi:upload
 
+########################################
+## Lights/Switches
+########################################
 switch.ge_12722_onoff_relay_switch_switch_6_0:
   friendly_name: Kitchen Light
   icon: mdi:lightbulb
@@ -28,6 +34,18 @@ light.ge_12724_3way_dimmer_switch_level_5_0:
   friendly_name: Hallway Lights
   icon: mdi:lightbulb
 
+########################################
+## Sensor
+########################################
+binary_sensor.ecolink_motion_sensor_sensor_7_0:
+  friendly_name: Hallway Motion Sensor
+
+binary_sensor.ecolink_motion_sensor_sensor_8_0:
+  friendly_name: Kitchen Motion Sensor
+
+########################################
+## Weather
+########################################
 sensor.dark_sky_summary:
   friendly_name: Forecast
   icon: mdi:briefcase
